@@ -32,6 +32,10 @@ class Product extends Model
         $this->stock = $stock;
     }
 
+    public function getId(): int
+    {
+        return $this->Id;
+    }
 
     public function getName(): string
     {
