@@ -2,12 +2,21 @@
 
 namespace Presentation\Http\Controllers;
 
+use Application\Services\Interfaces\ProductServiceInterface;
 use Application\Services\ProductService;
 use Presentation\Http\Requests\ProductsFormRequest;
 use App\Product;
 
 class ProductController extends Controller
 {
+
+    /** @var ProductServiceInterface */
+    private $productService;
+
+    public function __construct(ProductServiceInterface $productService)
+    {
+        $this->productService = $productService;
+    }
 
     public function showForm()
     {
@@ -22,8 +31,7 @@ class ProductController extends Controller
         $price = $request->input('price');
         $stock = $request->input('stock');
 
-        $productService = new ProductService();
-        $productService->create($name, $description, $price, $stock);
+        $this->productService->create($name, $description, $price, $stock);
 
         return $this->showList();
 
@@ -31,8 +39,7 @@ class ProductController extends Controller
 
     public function showList()
     {
-        $productService = new ProductService();
-        $products = $productService->findAll();
+        $products = $this->productService->findAll();
         return view('productList', ['products' => $products]);
     }
 

@@ -3,8 +3,9 @@
 namespace Application\Services;
 
 use App\Product;
+use Application\Services\Interfaces\ProductServiceInterface;
 
-class ProductService
+class ProductService implements ProductServiceInterface
 {
 
     public function create(string $name, string $description ,float $price, int $stock)
