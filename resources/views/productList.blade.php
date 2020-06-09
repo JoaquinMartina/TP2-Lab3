@@ -30,7 +30,7 @@
                                     @foreach($products as $itemProduct)
                                         <tbody>
                                         <tr>
-                                            <th scope="row">{{$itemProduct->id}}</th>
+                                            <th scope="row">{{$itemProduct->getId()}}</th>
                                             <td>{{$itemProduct->getName()}}</td>
                                             <td>{{$itemProduct->getDescription()}}</td>
                                             <td>{{$itemProduct->getPrice()}}</td>
