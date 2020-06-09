@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/products/all','ProductController@showList')->name('productList');
 
-Route::get('/products/new', 'ProductFormController@showForm')->name('productForm');
-Route::post('/products', 'ProductFormController@sendForm')->name('sendProductForm');
+Route::get('/products/new', 'ProductController@showForm')->name('productForm');
+Route::post('/products/all', 'ProductController@sendFormCreate')->name('sendProductForm');
 
 
