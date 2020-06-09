@@ -7,11 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
 
-    public function __construct()
-    {
-
-    }
-
     public function setName(string $name)
     {
         $this->name = $name;
@@ -34,7 +29,7 @@ class Product extends Model
 
     public function getId(): int
     {
-        return $this->Id;
+        return $this->id;
     }
 
     public function getName(): string

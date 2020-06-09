@@ -20,6 +20,6 @@ Route::get('/', function () {
 Route::get('/products/all','ProductController@showList')->name('productList');
 
 Route::get('/products/new', 'ProductController@showForm')->name('productForm');
-Route::post('/products/all', 'ProductController@sendFormCreate')->name('sendProductForm');
+Route::post('/products/all', 'ProductController@sendForm')->name('sendProductForm');
 
 
