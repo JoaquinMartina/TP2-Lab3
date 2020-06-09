@@ -37,7 +37,8 @@
             "App\\": "app/",
             "Application\\": "Application/",
             "Infrastructure\\": "Infrastructure/",
-            "Domain\\": "Domain/"
+            "Domain\\": "Domain/",
+            "Presentation\\": "Presentation/"
         },
         "classmap": [
             "database/seeds",
