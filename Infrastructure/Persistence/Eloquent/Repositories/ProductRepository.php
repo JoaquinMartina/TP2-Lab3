@@ -3,7 +3,7 @@
 namespace Infrastructure\Persistence\Eloquent\Repositories;
 
 use Domain\Entities\Product;
-use Domain\Interfaces\ProductRepositoryInterface;
+use Domain\Interfaces\Repository\ProductRepositoryInterface;
 
 class ProductRepository implements ProductRepositoryInterface
 {
@@ -19,8 +19,8 @@ class ProductRepository implements ProductRepositoryInterface
         $this->product->save();
     }
 
-    public function all(): array
+    public function all()
     {
-        return $this->product::all();
+        //Todo implementation
     }
 }

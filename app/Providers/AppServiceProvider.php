@@ -17,6 +17,11 @@ class AppServiceProvider extends ServiceProvider
             'Application\Services\Interfaces\ProductServiceInterface',
             'Application\Services\ProductService'
         );
+
+        $this->app->bind(
+            'Domain\Interfaces\Repository\ProductRepositoryInterface',
+            'Infrastructure\Persistence\Eloquent\Repositories\ProductRepository'
+        );
     }
 
     /**
