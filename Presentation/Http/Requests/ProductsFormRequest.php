@@ -26,7 +26,7 @@ class ProductsFormRequest extends FormRequest
         return [
             'name' => 'required|min:3|max:256',
             'description' => 'required',
-            'price' => 'required|numeric|min:1',
+            'price' => 'required|regex:/^\d*(\.\d{2})?$/|min:1',
             'stock'=> 'required|numeric|integer|min:0'
         ];
     }

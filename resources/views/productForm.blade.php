@@ -40,7 +40,7 @@
                             <div class="form-group row">
                                 <label for="price" class="col-md-4 col-form-label text-md-right">{{__('Precio')}}</label>
                                 <div class="col-md-6">
-                                    <input id="price" type="number" class="form-control" name="price" value="{{old('price')}}">
+                                    <input id="price" type="number step=0.01" class="form-control" name="price" value="{{old('price')}}">
                                     @error('price')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror
