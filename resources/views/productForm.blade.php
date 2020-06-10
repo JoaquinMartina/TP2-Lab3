@@ -49,7 +49,7 @@
                             <div class="form-group row">
                                 <label for="stock" class="col-md-4 col-form-label text-md-right">{{__('Stock')}}</label>
                                 <div class="col-md-6">
-                                    <input id="stock" type="number" class="form-control" name="stock" value="{{old('days')}}">
+                                    <input id="stock" type="number" class="form-control" name="stock" value="{{old('stock')}}">
                                     @error('stock')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror

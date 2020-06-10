@@ -16,11 +16,11 @@ class ProductRepository implements ProductRepositoryInterface
 
     public function save(Product $product): void
     {
-        $this->product->save();
+        $product->save();
     }
 
     public function all()
     {
-        //Todo implementation
+        return Product::all();
     }
 }
