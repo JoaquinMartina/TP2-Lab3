@@ -11,7 +11,7 @@ Directorio de proyecto/
 cd laradock/
  - Ejecutar **docker-compose up nginx mysql**
  
-            **docker-compose up -d nginx mysql  -> esto levanta los contenedores en segundo plano
+              docker-compose up -d nginx mysql  -> esto levanta los contenedores en segundo plano
  
  Dririgirse a http://localhost/
 
