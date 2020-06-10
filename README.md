@@ -1,3 +1,15 @@
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-# TP2-Lab3
+Levantar Proyecto 
+-----------------
+
+El proyecto contiene un entorno de ejecución implementado con Laradock, junto a Nginx como servidor web y Mysql como motor de base de datos.
+
+Directorio de proyecto/
+ - Ejecutar **php composer.phar install**
+
+cd laradock/
+ - Ejecutar **docker-compose up nginx mysql**
+ 
+ Dririgirse a http://localhost/
+
