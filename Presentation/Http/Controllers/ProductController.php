@@ -25,7 +25,6 @@ class ProductController extends Controller
 
     public function sendForm(ProductsFormRequest $request)
     {
-
         $name = $request->input('name');
         $description = $request->input('description');
         $price = $request->input('price');
