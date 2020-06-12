@@ -6,11 +6,15 @@ Levantar Proyecto
 El proyecto contiene un entorno de ejecución implementado con Laradock, junto a Nginx como servidor web y Mysql como motor de base de datos.
 
 Directorio de proyecto/
- - Ejecutar **php composer.phar install**
 
-cd laradock/
- - Ejecutar **docker-compose up nginx mysql**
+ - Ejecutar sudo chmod 777 composer.phar -> damos permisos de lectura y ejecución para posterior instalación
  
+cd laradock/
+
+ - Ejecutar **docker-compose up -d nginx mysql** -> esto levanta los contenedores en segundo plano
+ - Ejecutar **docker-compose exec workspace bash** -> entramos al contenedor workspace
+ - Ejecutar **./composer.phar install** -> instalacion de dependencias
+ - exit 
  
 Dririgirse a http://localhost/
 
