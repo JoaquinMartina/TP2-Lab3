@@ -23,6 +23,7 @@ class ProductController extends Controller
         return view('productForm');
     }
 
+    //TODO refactor validations in service
     public function sendForm(ProductsFormRequest $request)
     {
         $name = $request->input('name');
