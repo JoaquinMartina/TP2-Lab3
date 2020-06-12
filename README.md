@@ -7,7 +7,7 @@ El proyecto contiene un entorno de ejecución implementado con Laradock, junto a
 
 Directorio de proyecto/
 
- - Ejecutar sudo chmod 777 composer.phar -> damos permisos de lectura y ejecución para posterior instalación
+ - Ejecutar **sudo chmod 777 composer.phar** -> damos permisos de lectura y ejecución para posterior instalación
  
 cd laradock/
 
