@@ -20,3 +20,5 @@ cd laradock/
  
 Dririgirse a http://localhost/
 
+ - Ejecutar **docker-compose down** -> esto finaliza la ejecucion de los contenedores y liberación de puertos
+
